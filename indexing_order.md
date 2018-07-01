@@ -33,7 +33,8 @@ resized_width = cv2.resize(image, dim1, interpolation = cv2.INTER_AREA) # (w,h)
 sobelX = cv2.Sobel(img,cv2.CV_64F,1,0) # along the x-axis (finding vertical edges)  
 sobelY = cv2.Sobel(img,cv2.CV_64F,0,1) # along the y-axis (finding horizontal edges)  
  
-## Canny edge (blur, Sobel gradient x,y, supressing edges, hysteresis thresholding)
+## Canny edge
+(blur, Sobel gradient x,y, supressing edges, hysteresis thresholding) 
 canny = cv2.Canny(image, 30, 150) # two thresholds  
 
 ## Contours
