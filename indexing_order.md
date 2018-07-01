@@ -34,7 +34,7 @@ sobelX = cv2.Sobel(img,cv2.CV_64F,1,0) # along the x-axis (finding vertical edge
 sobelY = cv2.Sobel(img,cv2.CV_64F,0,1) # along the y-axis (finding horizontal edges)  
  
 ## Canny edge
-(blur, Sobel gradient x,y, supressing edges, hysteresis thresholding) 
+(blur, Sobel gradient x,y, supressing edges, hysteresis thresholding)  
 canny = cv2.Canny(image, 30, 150) # two thresholds  
 
 ## Contours
