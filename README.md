@@ -26,8 +26,26 @@ sudo apt-get update
 sudo apt-get install ffmpeg  
 sudo apt-get install frei0r-plugins  
 
+# Dlib 
+face detection, facial landmarks, correlation tracking, etc.
+## install 
+$ sudo apt-get update
+$ sudo apt-get install build-essential cmake
+$ sudo apt-get install libopenblas-dev liblapack-dev 
+$ sudo apt-get install libx11-dev libgtk-3-dev
+$ sudo apt-get install python python-dev python-pip
+$ sudo apt-get install python3 python3-dev python3-pip
+
+$ mkvirtualenv dlib_test -p python3
+$ workon cv
+$ pip install numpy # may be called pip3 for python3
+$ pip install dlib
+
+>>> import dlib # version check
+>>> dlib.__version__
+
 ## Face Recognition
-face_recognition package utilizing dlib:  
+face_recognition package utilizing dlib :  
 https://github.com/ageitgey/face_recognition#python-code-examples  
 
 
