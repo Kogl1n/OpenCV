@@ -41,3 +41,10 @@ canny = cv2.Canny(image, 30, 150) # two thresholds
 cv2.findContours: destructive to input  
 OpenCV 3: 3-tuple  
 OpenCV 2.4: 2-tuple  
+
+## Blob detection
+ver = (cv2.__version__).split('.')
+if int(ver[0]) < 3:
+    return cv2.SimpleBlobDetector(params)
+else:
+    return cv2.SimpleBlobDetector_create(params) 
