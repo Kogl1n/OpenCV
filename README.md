@@ -26,5 +26,9 @@ sudo apt-get update
 sudo apt-get install ffmpeg  
 sudo apt-get install frei0r-plugins  
 
+## Face Recognition
+face_recognition package utilizing dlib:  
+https://github.com/ageitgey/face_recognition#python-code-examples  
+
 
 
