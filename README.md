@@ -14,6 +14,9 @@ $ pip install menpo # importing, manipulating and visualizing image and mesh dat
 
 # Install
 Full install ~3GB but python3-OpenCV is actually enough.  
+$ sudo apt-get update  
+$ sudo apt-get install python python-dev python-pip # or  
+$ sudo apt-get install python3 python3-dev python3-pip  
 
 ## Windows
 Install numpy, scipy and matplotlib first.  
@@ -23,8 +26,7 @@ Then:
 pip install --upgrade pip (if Python script dir is in PATH var)  
 
 ## Linux
-(apt-get install python3-pip)  
-pip install numpy or apt-get install python3-numpy.  
+pip install numpy or apt-get install python3-numpy. # may be called pip3 for python3    
 pip install matplotlib or apt-get install python3-matplotlib.
 apt-get install python3-OpenCV
 
@@ -44,17 +46,14 @@ sudo apt-get install frei0r-plugins
 # Dlib 
 face detection, facial landmarks, correlation tracking, etc.
 ## install 
-$ sudo apt-get update
-$ sudo apt-get install build-essential cmake
-$ sudo apt-get install libopenblas-dev liblapack-dev 
-$ sudo apt-get install libx11-dev libgtk-3-dev
-$ sudo apt-get install python python-dev python-pip
-$ sudo apt-get install python3 python3-dev python3-pip
-
-$ mkvirtualenv dlib_test -p python3
-$ workon cv
-$ pip install numpy # may be called pip3 for python3
-$ pip install dlib
+$ sudo apt-get install build-essential cmake  
+$ sudo apt-get install libopenblas-dev liblapack-dev  
+$ sudo apt-get install libx11-dev libgtk-3-dev  
+  
+$ mkvirtualenv dlib_test -p python3  
+$ workon cv  
+$ pip install numpy # may be called pip3 for python3  
+$ pip install dlib  
 
 >>> import dlib # version check
 >>> dlib.__version__
