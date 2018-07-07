@@ -12,6 +12,21 @@ $ pip install scikit-learn
 $ pip install -U scikit-image	# state of the art algos: scikit-image  
 $ pip install menpo # importing, manipulating and visualizing image and mesh data   
 
+# Install
+Full install ~3GB but python3-OpenCV is actually enough.  
+
+## Windows
+Install numpy, scipy and matplotlib first.  
+pip install C:/some-dir/opencv-file.whl from  
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv
+Then:  
+pip install --upgrade pip (if Python script dir is in PATH var)  
+
+## Linux
+(apt-get install python3-pip)  
+pip install numpy or apt-get install python3-numpy.  
+pip install matplotlib or apt-get install python3-matplotlib.
+apt-get install python3-OpenCV
 
 # FFmpgeg
 ## Installing FFmpeg on Windows
