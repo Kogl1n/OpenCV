@@ -18,7 +18,7 @@ Full install ~3GB but python3-OpenCV is actually enough.
 ## Windows
 Install numpy, scipy and matplotlib first.  
 pip install C:/some-dir/opencv-file.whl from  
-https://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv  
 Then:  
 pip install --upgrade pip (if Python script dir is in PATH var)  
 
